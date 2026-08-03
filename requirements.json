@@ -1,0 +1,46 @@
+{
+  "project_name": "نظام إدارة معارض الفن",
+  "project_type": "art_gallery_management",
+  "color_palette": "amber-400 and gray-200",
+  "modules": [
+    "artists",
+    "artworks",
+    "exhibitions"
+  ],
+  "pages": [
+    "index",
+    "login",
+    "register",
+    "list_artworks",
+    "list_exhibitions",
+    "artist_profile",
+    "exhibition_details"
+  ],
+  "permissions": {
+    "guest": [
+      "index",
+      "list_exhibitions",
+      "list_artworks"
+    ],
+    "user": [
+      "index",
+      "list_exhibitions",
+      "list_artworks",
+      "artist_profile",
+      "exhibition_details"
+    ],
+    "admin": [
+      "index",
+      "list_exhibitions",
+      "list_artworks",
+      "artist_profile",
+      "exhibition_details",
+      "add_artwork",
+      "edit_artwork",
+      "delete_artwork",
+      "add_exhibition",
+      "edit_exhibition",
+      "delete_exhibition"
+    ]
+  }
+}
